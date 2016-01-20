@@ -3,6 +3,9 @@ var piglatin = function(letter) {
     if (vowels.includes(letter[0])) {
       return true;
     }
+    else {
+      return false;
+    }
 };
 
 
