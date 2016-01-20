@@ -1,7 +1,8 @@
-var piglatin = function(letter) {
+var piglatin = function(word) {
   var vowels = ['a', 'e', 'i', 'o', 'u'];
-    if (vowels.includes(letter[0])) {
-      return true;
+  var ay = ['ay']
+    if (vowels.includes(word[0])) {
+      return (word.concat(ay));
     }
     else {
       return false;
