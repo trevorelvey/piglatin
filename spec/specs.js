@@ -24,8 +24,11 @@ describe('vowelCheck', function() {
   it("moves the first, second, third, and fourth consonants to the end of the word and adds 'ay'", function() {
     expect(translate("tttta")).to.equal("attttay")
   });
-  it("moves the consonants up to and including 'qu' to the end of the word and adds 'ay'", function(){
-    expect(translate("squeal")).to.equal("ealsquay")
+  it("moves the consonants up to and including 'qu' to the end of the word and adds 'ay'", function() {
+    expect(movequ("queen")).to.equal("eenquay")
+  });
+  it("moves the consonants up to and including 'qu' to the end of the word and adds 'ay'", function() {
+    expect(movequ("squelch")).to.equal("elchsquay")
   });
 });
 //

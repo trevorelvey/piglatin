@@ -1,6 +1,6 @@
 var vowels = ['a', 'e', 'i', 'o', 'u'];
-var ay = ['ay']
-var qu = ['qu']
+var qu = "qu";
+var ay = "ay";
 
 var vowelCheck = function(word) {
 
@@ -18,6 +18,9 @@ var translate = function(word) {
 
   // } else if (!vowels.includes(word[0])){
   //   return (word.substring(1,word.length) + word.substring(0,1) + ay);
+  // } else if (vowels.includes(word(qu))){
+  //   return (word.substring(,word.length) + word.substring(0,1) + ay);
+
   } else if (vowels.includes(word[1])){
     return (word.substring(1,word.length) + word.substring(0,1) + ay);
   } else if (vowels.includes(word[2])){
@@ -29,13 +32,17 @@ var translate = function(word) {
   } else {
     return false;
   };
-
-  //
-  // else if word = word.substring(1) {
-  //   return (word.concat())
-
-  // }
-
-
 };
-//       return (word.concat(ay));
+
+var movequ = function(word) {
+    if (qu.includes(word[0]) && qu.includes(word[1])){
+    return (word.substring(2,word.length) + word[0] + word[1] + ay);
+
+  } else if (qu.includes(word[1]) && qu.includes(word[2])){
+    return (word.substring(3,word.length) + word[0] + word[1] + word[2] + ay);
+
+  } else {
+      return "abcd";
+    };
+
+ };
