@@ -1,15 +1,22 @@
+var vowels = ['a', 'e', 'i', 'o', 'u'];
+var ay = ['ay']
+
 var piglatin = function(word) {
-  var vowels = ['a', 'e', 'i', 'o', 'u'];
-  var ay = ['ay']
+
     if (vowels.includes(word[0])) {
-      return (word.concat(ay));
+      return true;
     }
     else {
       return false;
     }
 };
 
+var translate = function(word) {
+  if (vowels.includes(word[0])) {
+    return (word.concat(ay));
+  }
 
 
-// vowels.forEach(function(vowel) {
-//   if (word.charAt(0) === vowels) {
+
+};
+//       return (word.concat(ay));
