@@ -1,6 +1,6 @@
 describe('piglatin', function() {
-  it("is a number", function() {
-   expect(piglatin(123)).to.equal("notLetters")
+  it("is a word beginning with a vowel", function() {
+   expect(piglatin("apple")).to.equal(true)
  });
 
 });
