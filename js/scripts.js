@@ -2,6 +2,11 @@ var vowels = ['a', 'e', 'i', 'o', 'u'];
 var qu = "qu";
 var ay = "ay";
 
+var split = function(phrase) {
+  var res = phrase.split(" ");
+    return res;
+};
+
 var vowelCheck = function(word) {
 
     if (vowels.includes(word[0])) {

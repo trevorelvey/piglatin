@@ -30,7 +30,14 @@ describe('vowelCheck', function() {
   it("moves the consonants up to and including 'qu' to the end of the word and adds 'ay'", function() {
     expect(movequ("squelch")).to.equal("elchsquay")
   });
+  it("splits words in a sentence into an array", function() {
+    expect(split("hi mom")).to.eql(["hi","mom"])
+  });
+  // it("translates all words in a sentence into pig latin", function() {
+  //   expect(translate("Hi everyone, how are you?")).to.equal("iHay everyoneay, owhay areay ouyay?")
+
 });
+
 //
 //
 // potato
